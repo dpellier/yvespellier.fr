@@ -1,0 +1,25 @@
+
+@import 'app/styles/breakpoints';
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 400px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $sm) {
+        width: 560px;
+    }
+
+    @media screen and (min-width: $md) {
+        width: 900px;
+    }
+
+    @media screen and (min-width: $lg) {
+        width: 1000px;
+    }
+
+    @media screen and (min-width: $xl) {
+        width: 1600px;
+    }
+}

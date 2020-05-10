@@ -1,0 +1,23 @@
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    height: 100%;
+
+    &__collages,
+    &__drawings,
+    &__photos {
+        cursor: pointer;
+
+        &__cover {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__label {
+            margin: 20px 0 0;
+        }
+    }
+}

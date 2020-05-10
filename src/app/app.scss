@@ -1,0 +1,9 @@
+
+@import 'app/styles/variables';
+
+.app {
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr;
+    background-color: $default-background-color;
+    height: 100%;
+}

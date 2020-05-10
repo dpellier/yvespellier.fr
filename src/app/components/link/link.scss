@@ -1,0 +1,13 @@
+
+@import 'app/styles/variables';
+
+.link {
+    color: $link-default-color;
+    text-decoration: none;
+    transition: color .3s ease, font-weight ease .3s;
+
+    &:global(.active) {
+        color: $link-active-color;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,33 @@
+
+@import 'app/styles/variables';
+
+.header {
+    margin-top: 30px;
+    border-bottom: solid 1px $default-border-color;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+
+        &__title {
+            font-size: 23px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        &__nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            align-items: center;
+
+            &__link {
+                & + & {
+                    border-left: solid 1px $default-border-color;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
